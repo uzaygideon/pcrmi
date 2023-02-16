@@ -106,7 +106,7 @@ export const Home = (props) => {
         image={imgTwo}
         sx={{objectFit:"cover",position:"relative"}}/>
         <Box sx={{width:"100%",bgcolor:"rgba(0,0,0,0.5)",py:{xs:"72%",sm:"42%",md:"28%",lg:"21%",xl:"16.5%"},position:"absolute",top:"0%",color:"RGB(214 217 219)",fontSize:{xs:"2rem",sm:"3.2rem"},textTransform:"capitalize" ,fontWeight:"100",textAlign:"center",textShadow:"5px 5px 3px black"}}> 
-        in pursiut of <Typography component="span" sx={{color:"RGB(55 143 231)",fontSize:{xs:"2rem",sm:"3.2rem"}}}>eternal</Typography> purpose
+        in pursuit of <Typography component="span" sx={{color:"RGB(55 143 231)",fontSize:{xs:"2rem",sm:"3.2rem"}}}>eternal</Typography> purpose
         </Box>
       </SwiperSlide>
       <SwiperSlide>
@@ -117,7 +117,7 @@ export const Home = (props) => {
         image={imgThree}
         sx={{objectFit:"cover",position:"relative"}}/>
         <Box sx={{width:"100%",bgcolor:"rgba(0,0,0,0.5)",py:{xs:"72%",sm:"42%",md:"28%",lg:"21%",xl:"16.5%"},position:"absolute",top:"0%",color:"RGB(214 217 219)",fontSize:{xs:"2rem",sm:"3rem"},textTransform:"capitalize" ,fontWeight:"100",textAlign:"center",textShadow:"5px 5px 3px black"}}> 
-        in pursiut of <Typography component="span" sx={{color:"RGB(55 143 231)",fontSize:{xs:"2rem",sm:"3rem"}}}>divine</Typography> assignment
+        in pursuit of <Typography component="span" sx={{color:"RGB(55 143 231)",fontSize:{xs:"2rem",sm:"3rem"}}}>divine</Typography> assignment
         </Box>
       </SwiperSlide>
     </Swiper>

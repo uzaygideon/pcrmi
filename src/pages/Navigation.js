@@ -30,8 +30,8 @@ export function Navigat(props) {
         <CardMedia
             component="img"
             image={logoImg}
-            height="30vh"
-            sx={{width:"50%",my:2}}
+            height="35vh"
+            sx={{width:"50%",my:2,backgroundColor:"white",objectFit:"contain"}}
             />
       <Divider />
       <List >
@@ -85,36 +85,35 @@ export function Navigat(props) {
   return (
     <>
     <Box sx={{ display: 'flex'}}>
-      <AppBar sx={{backgroundColor:"rgb(255,255,255)" }} >
-        <Toolbar>
+      <AppBar sx={{backgroundColor:"rgb(255,255,255)"}} >
+        <Toolbar sx={{display:"flex",justifyContent:"space-between"}}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
+            sx={{ mr: 2, display: { sm: 'none' } ,backgroundColor:""}}
           >
-            <MenuIcon sx={{  color: "rgb(90,162,235)"}}/>
+            <MenuIcon sx={{  color: "rgb(90,162,235)",fontSize:"2rem"}}/>
             <CardMedia
             component="img"
             image={logoImg}
-            height="30vh"
-            sx={{width:"50%",display:"flex",flexGrow:"1"}}
+            height="40vh"
+            sx={{backgroundColor:"white",objectFit:"contain",width:"100%"}}
             />
           </IconButton>
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' },color:"rgb(183,103,151)" }}
+            sx={{  display: { xs: 'none', sm: 'block' },color:"rgb(183,103,151)",backgroundColor:"",width:{md:"27%"},pl:1 }}
           >
             <CardMedia
             component="img"
             image={logoImg}
-            height="30vh"
-            sx={{width:{sm:"30%",md:"20%",lg:"19%",xl:"14%"}}}
+            sx={{width:{sm:"100%",md:"60%"},height:{sm:"5vh",md:"10vh"},objectFit:"contain",backgroundColor:"white"}}
             />
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' },mr:"8%"  }}>   
+          <Box sx={{ display: { xs: 'none', sm: 'block' },backgroundColor:"",pr:2}}>   
         <Button variant="text" sx={{fontWeight:"bold",fontFamily:"'oswald'"}}>
         <Link to="/"  onClick={()=>setActive('/')} className={active==='/'?'link-1':'link-2'} style={{ textDecoration: 'none' }}>Home</Link>
           </Button>

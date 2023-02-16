@@ -61,7 +61,7 @@ export const SubNavTwo = () => {
         open={open}
         onClick={handleClose}
       >
- <video controls width="500" height="275" style={{boxShadow:"2px 2px 5px RGB(44 46 47)"}}>
+ <video controls  style={{boxShadow:"2px 2px 5px RGB(44 46 47)"}} className='vd-class'>
       <source src={videoPlayer} type="video/mp4" />
       Sorry, your browser doesn't support embedded videos.
     </video>

@@ -15,7 +15,7 @@ export const SubNavOne = () => {
     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
     Possimus molestiae repudiandae voluptatum dicta neque.
     </Typography>
-  <Typography paragraph={true} sx={{mt:{xs:"4%"}}}>“THY KINGDOM COME” — <Typography component="span" sx={{fontStyle:"italic",color:"gray"}}>by Pastor Edward Cane </Typography>
+  <Typography paragraph={true} sx={{mt:{xs:"4%"}}}>“THY KINGDOM COME” — <Typography component="span" sx={{fontStyle:"italic",color:"gray"}}>by Pastor Diran Ajimati </Typography>
   <Box sx={{mt:"3%"}}>
     <ReactAudioPlayer
   src={latestAudio}

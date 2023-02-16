@@ -42,9 +42,9 @@ export const SopOnWeb = () => {
 {/* end of flex two */}
 <Typography sx={{lineHeight:"1.7",color:"rgb(168,174,177)",fontFamily:"roboto",mt:{xs:2,sm:0}}}>
 <Typography sx={{color:"rgba(255,255,255,0.8)",textTransform:"uppercase",fontFamily:"oswald"}}> <Textsms/>  get in touch</Typography>
-Email:prevailerchurch@gmail.com
+<a href='mailto:"prevailerchurch@gmail.com"' style={{color:"rgb(168,174,177)",textDecoration:"none"}}>Email:prevailerchurch@gmail.com</a>
   <br/>
-  Phone:+2348169344755
+  <a href='tel:+2348169344755' style={{color:"rgb(168,174,177)",textDecoration:"none"}}>Phone:+2348169344755</a>
 
 </Typography>
 {/* end of flex three */}

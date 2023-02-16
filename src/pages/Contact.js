@@ -49,11 +49,11 @@ flexDirection:{xs:"column",sm:"row"}
 <Box sx={{width:{xs:"100%",sm:"65%"},bgcolor:"rgb(248,249,250)",px:3,pt:4,pb:10}}>
   <form  ref={form} onSubmit={sendEmail}>
   <Typography color="text.secondary"sx={{fontWeight:"bold",mt:2}}>Full Name</Typography>
- <TextField name="user_name" id="outlined-basic" label="Full Name" variant="outlined" sx={{width:{xs:"100%",sm:"80%"},mt:1}} size="small" required/>
+ <TextField name="user_name" id="outlined-basic" label="Full Name" variant="outlined" sx={{width:{xs:"100%",sm:"80%"},mt:1}} size="small" required inputMode='text'/>
  <Typography color="text.secondary"sx={{fontWeight:"bold",mt:2}}>Email</Typography>
- <TextField name='client_email' id="outlined-basic" label="Email" variant="outlined" sx={{width:{xs:"100%",sm:"80%"},mt:1}} size="small" type="email"  required/>
+ <TextField name='client_email' id="outlined-basic" label="Email" variant="outlined" sx={{width:{xs:"100%",sm:"80%"},mt:1}} size="small" type="email"  required inputMode='email'/>
  <Typography color="text.secondary"sx={{fontWeight:"bold",mt:2}}>Phone</Typography>
- <TextField name="phone_name" id="outlined-basic" label="Phone" variant="outlined" sx={{width:{xs:"100%",sm:"80%"},mt:1}} size="small" type="number"  required/>
+ <TextField name="phone_name" id="outlined-basic" label="Phone" variant="outlined" sx={{width:{xs:"100%",sm:"80%"},mt:1}} size="small" type="tel"  required inputMode='numeric'/>
  <textarea name="messages" style={{padding:"2% 2% 10%",marginTop:"2%",resize:"none",fontSize:"1.1rem", fontFamily:"'Work Sans', sans-serif",border:"1px solid rgba(0,0,0,0.2)",backgroundColor:"rgb(248,249,250)"}}placeholder="Type in here" className='textA'/>
  <Button variant="contained" sx={{borderRadius:"0.5rem",textTransform:"capitalize",bgcolor:"gray",mt:1}} type="submit" endIcon={<Send/>} >Send message</Button>
  </form>
@@ -71,12 +71,12 @@ flexDirection:{xs:"column",sm:"row"}
 
     <Typography color="text.secondary"sx={{fontWeight:"bold",mt:2}}>Phone</Typography>
     <Typography sx={{ fontFamily:"'Work Sans', sans-serif;",fontSize:"0.9rem"}} color="text.secondary">  
-    +2348169344755
+    <a href='tel:+2348169344755' style={{color:"rgb(168,174,177)",textDecoration:"none"}}>Phone:+2348169344755</a>
     </Typography>
 
     <Typography color="text.secondary"sx={{fontWeight:"bold",mt:2}}>Email</Typography>
     <Typography sx={{ fontFamily:"'Work Sans', sans-serif;",fontSize:"0.9rem"}} color="text.secondary">  
-    prevailerchurch@gmail.com
+    <a href='mailto:"prevailerchurch@gmail.com"' style={{color:"rgb(168,174,177)",textDecoration:"none"}}>Email:prevailerchurch@gmail.com</a>
     </Typography>
   </Box>
   <Box sx={{width:"100%",bgcolor:"white",px:2,pt:3,pb:4,mt:3}}>

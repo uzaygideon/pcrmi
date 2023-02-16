@@ -12,7 +12,7 @@ export const SubNavFooter = () => {
     justifyContent:"space-between"
     
     }}>
-<Typography sx={{lineHeight:"1.5",color:"rgb(168,174,177)",fontFamily:"roboto",mt:{xs:2,sm:0}}}>
+<Typography sx={{lineHeight:"1.5",color:"rgb(168,174,177)",fontFamily:"roboto",mt:{xs:2,sm:0},fontSize:{xs:"0.9rem",sm:''}}}>
 <Typography sx={{color:"rgba(255,255,255,0.8)",textTransform:"uppercase",fontFamily:"oswald"}}> <LocationOn/> location</Typography>
   First turning by the left off Olu Alabi way,
   <br/>
@@ -32,9 +32,9 @@ export const SubNavFooter = () => {
 {/* end of flex two */}
 <Typography sx={{lineHeight:"1.7",color:"rgb(168,174,177)",fontFamily:"roboto",mt:{xs:2,sm:0}}}>
 <Typography sx={{color:"rgba(255,255,255,0.8)",textTransform:"uppercase",fontFamily:"oswald"}}> <Textsms/>  get in touch</Typography>
-Email:prevailerchurch@gmail.com
+<a href='mailto:"prevailerchurch@gmail.com"' style={{color:"rgb(168,174,177)",textDecoration:"none"}}>Email:prevailerchurch@gmail.com</a>
   <br/>
-  Phone:+2348169344755
+ <a href='tel:+2348169344755' style={{color:"rgb(168,174,177)",textDecoration:"none"}}>Phone:+2348169344755</a>
 
 </Typography>
 {/* end of flex three */}
@@ -44,13 +44,13 @@ Email:prevailerchurch@gmail.com
     display:"flex",
     flexDirection:{xs:"column",sm:"row"},
     justifyContent:"space-between"
-    
+ 
     }}>
-<Typography sx={{lineHeight:"1.8",fontFamily:"roboto",textTransform:"capitalize"}}>
+<Typography sx={{lineHeight:"1.8",fontFamily:"roboto",textTransform:"capitalize",fontSize:{xs:"0.9rem",sm:''}}}>
 <Typography sx={{color:"rgba(255,255,255,0.9)",textTransform:"capitalize",fontFamily:"oswald",fontSize:"1.2rem",mb:{xs:"0%",sm:"5%"}}}> programs</Typography>
- <Link underline='hover' sx={{color:"rgb(168,174,177)"}}>{ "moment of change(MOC)"}</Link>
+ <Link href="#" underline='hover' sx={{color:"rgb(168,174,177)"}}>{ "moment of change(MOC)"}</Link>
   <br/>
-  <Link href="#" underline='hover' sx={{color:"rgb(168,174,177)"}}>{ "school of purpose live (SOP)"}</Link>
+  <Link href="https://www.youtube.com/@theprevailerschurch/streams" underline='hover' sx={{color:"rgb(168,174,177)"}} target="_blank">{ "school of purpose live (SOP)"}</Link>
   <br/>
   <Link  component={RouterLink} to='/SopOnAir' underline='hover' sx={{color:"rgb(168,174,177)"}}>{ "school of purpose on air (SOPOA)"}</Link>
   <br/>
@@ -60,7 +60,7 @@ Email:prevailerchurch@gmail.com
 
 <Typography sx={{lineHeight:"1.8",fontFamily:"roboto",textTransform:"capitalize",mt:{xs:2}}}>
 <Typography sx={{color:"rgba(255,255,255,0.9)",textTransform:"capitalize",fontFamily:"oswald",fontSize:"1.2rem",mb:{xs:"0%",sm:"5%"}}}> media</Typography>
- <Link href="#" underline='hover' sx={{color:"rgb(168,174,177)"}}>{ "event streaming"}</Link>
+ <Link href="https://waystre.am/live/theprevailerschurch" underline='hover' sx={{color:"rgb(168,174,177)"}} target="_blank">{ "event streaming"}</Link>
   <br/>
   <Link href="#" underline='hover' sx={{color:"rgb(168,174,177)"}}>{ "moment of change messages"}</Link>
   <br/>
@@ -87,9 +87,9 @@ Email:prevailerchurch@gmail.com
         justifyContent:"space-between"
        
     }}>
-        <Link href="#"  sx={{color:"rgb(168,174,177)",transition:"all 0.5s","&:hover":{color:"white"}}}><FacebookRounded/></Link>
-        <Link href="#" sx={{color:"rgb(168,174,177)",transition:"all 0.5s","&:hover":{color:"white"}}}><Instagram/></Link>
-        <Link href="#" sx={{color:"rgb(168,174,177)",transition:"all 0.5s","&:hover":{color:"white"}}}> <Telegram/></Link>
+        <Link href="https://www.facebook.com/theprevailerschurch/videos/498770525761841/?app=fbla"  sx={{color:"rgb(168,174,177)",transition:"all 0.5s","&:hover":{color:"white"},mr:1}} target="_blank"><FacebookRounded/></Link>
+        <Link href="https://www.instagram.com/p/CoUk55Oo4ZJ/?igshid=Zjc2ZTc4Nzk=" sx={{color:"rgb(168,174,177)",transition:"all 0.5s","&:hover":{color:"white"},mr:1}} target="_blank"><Instagram/></Link>
+        <Link href="https://t.me/prevailerschurchmessages" sx={{color:"rgb(168,174,177)",transition:"all 0.5s","&:hover":{color:"white"},mr:1}} target="_blank"> <Telegram/></Link>
     </Box>
     </Typography>
     {/* end of second flexthree */}
